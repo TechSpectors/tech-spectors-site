@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Spectors</title>
+    <link rel="icon" href="./logo.jpg" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <style>
+      @keyframes fade-in-up {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fade-in-up 1s ease-out;
+      }
+
+      .interactive-card {
+        @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 text-left text-white shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:border-[#47a9eb];
+      }
+
+      @keyframes shine {
+        0% {
+          background-position: -100%;
+        }
+        100% {
+          background-position: 200%;
+        }
+      }
+
+      .team-card {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+        color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .team-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 2px;
+        background: linear-gradient(120deg, transparent, #47a9eb, #47a9eb, transparent);
+        background-size: 200% auto;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.4s ease;
+      }
+
+      .team-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(71, 169, 235, 0.3);
+      }
+
+      .team-card:hover::before {
+        opacity: 1;
+        animation: shine 1.5s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#0b1120] text-white font-sans">
+    <div class="flex flex-col min-h-screen">
+      
+      <!-- Header -->
+      <header class="flex items-center justify-between border-b border-white/10 px-6 md:px-20 py-4 bg-white/5 backdrop-blur-md shadow">
+        <div class="flex items-center gap-4">
+          <img src="images/logo.jpg" alt="Tech Spectors Logo" class="h-10 w-10 rounded-full object-cover border-2 border-[#47a9eb]" />
+          <h1 class="text-xl font-bold tracking-tight">Tech Spectors</h1>
+        </div>
+        <nav class="flex items-center gap-6 text-sm font-medium">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#resources">Resources</a>
+          <a href="#Contact">Contact</a>
+          <a
+            href="https://github.com/TechSpectors"
+            target="_blank"
+            class="ml-4 px-4 py-2 bg-[#47a9eb] text-[#111518] rounded-md font-semibold hover:bg-[#3e97d4] transition"
+          >
+            Join Us
+          </a>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <main class="flex-1 px-4 md:px-20 py-10">
+        <div
+          class="flex flex-col items-center justify-center min-h-[520px] p-8 gap-6 rounded-xl text-white text-center border border-white/10 shadow-lg bg-white/5 backdrop-blur-md animate-fade-in-up"
+          style='background-image: linear-gradient(135deg, rgba(18, 30, 61, 0.85), rgba(13, 17, 29, 0.95)), url("images/hero-bg.jpg"); background-size: cover; background-position: center;'
+        >
+          <img
+            src="images/logo.jpg"
+            alt="Tech Spectors Logo"
+            class="h-24 w-24 rounded-full object-cover border-4 border-[#47a9eb] shadow"
+          />
+          <div class="space-y-4 max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-[#47a9eb] to-white text-transparent bg-clip-text">
+              Tech Spectors
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg">
+              A community of passionate computer science students collaborating on innovative projects and shaping the future of technology.
+            </p>
+          </div>
+          <a
+            href="https://github.com/TechSpectors"
+            target="_blank"
+            class="mt-4 px-6 py-3 bg-[#47a9eb] text-[#111518] font-semibold rounded-md hover:bg-[#3e97d4] transition"
+          >
+            Explore Projects
+          </a>
+        </div>
+      </main>
+
+      <!-- About Section -->
+      <section id="about" class="px-4 md:px-20 py-16 animate-fade-in-up">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">About Tech Spectors</h2>
+          <p class="text-gray-300 text-base md:text-lg">
+            Tech Spectors is a growing community of passionate student developers driven by innovation, collaboration, and a shared love for technology.
+            Our mission is to build, learn, and grow together through meaningful projects, events, and peer mentorship.
+          </p>
+        </div>
+      </section>
+
+      <!-- Info Grid Section -->
+      <section id="info-cards" class="px-4 md:px-20 py-24 animate-fade-in-up justify-center items-center text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="interactive-card" id="projects">
+            <h3 class="text-2xl font-bold mb-3">🚀 Our Projects</h3>
+            <p class="text-gray-300">
+              We’re currently working on something exciting.<br />
+              <span class="text-[#47a9eb] font-semibold">Stay tuned for our upcoming innovations!</span>
+            </p>
+          </div>
+          <div class="interactive-card" id="resources">
+            <h3 class="text-2xl font-bold mb-3">📚 Resources</h3>
+            <p class="text-gray-300">
+              Curated learning materials, tech guides, and more.<br />
+              <span class="text-[#47a9eb] font-semibold">Soon you'll find tools and content we love!</span>
+            </p>
+          </div>
+          <div class="interactive-card" id="contact">
+            <h3 class="text-2xl font-bold mb-3">📬 Contact Us</h3>
+            <p class="text-gray-300 mb-2">Have a question, idea, or want to collaborate?</p>
+            <a href="mailto:techspectorspec@gmail.com" class="text-blue-400 hover:underline">techspectorspec@gmail.com</a>
+          </div>
+          <div class="interactive-card">
+            <h3 class="text-2xl font-bold mb-3">🌟 Community Perks</h3>
+            <p class="text-gray-300">
+              Opportunities to learn, build, and connect with like-minded developers.<br />
+              <span class="text-[#47a9eb] font-semibold">Coming soon with exclusive perks!</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="px-4 md:px-20 py-16 bg-white/5 backdrop-blur-md border-t border-white/10 animate-fade-in-up">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+          <p class="text-gray-300 mb-10">
+            A dedicated team of student developers leading innovation and collaboration within Tech Spectors.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <a href="https://github.com/JabezJesudasonJena" target="_blank" class="team-card group">
+              <h3 class="text-xl font-bold">Jabez</h3>
+              <p class="text-sm text-gray-400">Leader</p>
+            </a>
+            <a href="https://github.com/chiragroshan18" target="_blank" class="team-card group">
+              <h3 class="text-xl font-bold">Chirag</h3>
+              <p class="text-sm text-gray-400">Member</p>
+            </a>
+            <a href="https://github.com/kirlosh667" target="_blank" class="team-card group">
+              <h3 class="text-xl font-bold">Kirlosh</h3>
+              <p class="text-sm text-gray-400">Member</p>
+            </a>
+            <a href="https://github.com/yuva-1237" target="_blank" class="team-card group">
+              <h3 class="text-xl font-bold">Yuvathilangan</h3>
+              <p class="text-sm text-gray-400">Member</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-white/10 px-4 md:px-20 py-6 text-center text-sm text-gray-400" id="Contact">
+        <p>&copy; 2025 Tech Spectors. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:techspectorspec@gmail.com" class="underline text-white">techspectorspec@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
