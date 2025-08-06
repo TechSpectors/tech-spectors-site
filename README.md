@@ -5,7 +5,7 @@ Welcome to the **official website** repository of **Tech Spectors** – a passio
 
 ## 🌐 Live Demo
 
-🔗 [Visit the Website](https://your-deployment-url.com)
+🔗 [Visit the Website](https://techspectors.github.io/tech-spectors-site/)
 
 ## 🧭 Vision & Mission
 
@@ -52,12 +52,7 @@ cd techspectors-website
 
 ## 🚀 Deployment
 
-Deployed via [GitHub Pages](https://pages.github.com/).
-
-To deploy:
-1. Push your code to the `main` branch.
-2. Go to repo Settings > Pages.
-3. Set source to `/root` or `/docs` and hit save.
+Deployed via [GitHub Pages](https://techspectors.github.io/tech-spectors-site/).
 
 ## 📬 Contact
 
