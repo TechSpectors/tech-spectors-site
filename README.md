@@ -40,7 +40,6 @@ This is just the **start** of something impactful. We welcome every curious mind
 - [Kirlosh](https://github.com/kirlosh667)
 - [Yuvathilangan](https://github.com/yuva-1237)
 - [Dinesh](https://github.com/dinesh-cse-2007)
-- 
 ## 🛠️ Installation
 
 To run locally:
