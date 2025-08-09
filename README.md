@@ -39,7 +39,7 @@ This is just the **start** of something impactful. We welcome every curious mind
 - [Chirag](https://github.com/chiragroshan18)
 - [Kirlosh](https://github.com/kirlosh667)
 - [Yuvathilangan](https://github.com/yuva-1237)
-- [Dines](https://github.com/dinesh-cse-2007)
+- [Dinesh](https://github.com/dinesh-cse-2007)
 - 
 ## 🛠️ Installation
 
