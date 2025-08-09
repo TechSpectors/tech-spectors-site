@@ -41,7 +41,7 @@ This is just the **start** of something impactful. We welcome every curious mind
 - [Yuvathilangan](https://github.com/yuva-1237)
 - [Dinesh](https://github.com/dinesh-cse-2007)
 - [John](https://github.com/johns15oct)
-- [Santsh](https://github.com/SanthoshUdaiyar)
+- [Santosh](https://github.com/SanthoshUdaiyar)
 ## 🛠️ Installation
 
 To run locally:
