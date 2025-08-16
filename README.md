@@ -42,6 +42,7 @@ This is just the **start** of something impactful. We welcome every curious mind
 - [Dinesh](https://github.com/dinesh-cse-2007)
 - [John](https://github.com/johns15oct)
 - [Santosh](https://github.com/SanthoshUdaiyar)
+- [Nitheesh Kumar](https://github.com/xtremenk24)
 ## 🛠️ Installation
 
 To run locally:
