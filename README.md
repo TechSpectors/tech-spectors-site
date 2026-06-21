@@ -1,11 +1,11 @@
 
-# 🚀 Tech Spectors
+# Tech Spectors
 
 Welcome to the **official website** repository of **Tech Spectors** – a passionate student-led developer community aimed at innovation, collaboration, and shared learning.
 
-## 🌐 Live Demo
+## 🌐 Website
 
-🔗 [Visit the Website](https://techspectors.github.io/tech-spectors-site/)
+🔗 [Website](https://techspectors.github.io/tech-spectors-site/)
 
 ## 🧭 Vision & Mission
 
@@ -26,13 +26,6 @@ This is just the **start** of something impactful. We welcome every curious mind
 - Interactive hover animations for team section
 - Fully responsive and accessible
 
-## 📂 Tech Stack
-
-- HTML5
-- Tailwind CSS
-- Custom CSS Animations
-- GitHub Pages (for deployment)
-
 ## 🧑‍💻 Meet the Team
 
 - [Jabez (Leader)](https://github.com/JabezJesudasonJena)
@@ -43,17 +36,8 @@ This is just the **start** of something impactful. We welcome every curious mind
 - [John](https://github.com/johns15oct)
 - [Santosh](https://github.com/SanthoshUdaiyar)
 - [Nitheesh Kumar](https://github.com/xtremenk24)
-## 🛠️ Installation
 
-To run locally:
-
-```bash
-git clone https://github.com/TechSpectors/techspectors-website.git
-cd techspectors-website
-# Open index.html in your browser
-```
-
-## 🚀 Deployment
+## Deployment
 
 Deployed via [GitHub Pages](https://techspectors.github.io/tech-spectors-site/).
 
